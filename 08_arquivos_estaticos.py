@@ -1,4 +1,4 @@
-from flask import render_template, Flask
+from flask import render_template, Flask, request
 
 app = Flask(__name__)
 
@@ -11,5 +11,6 @@ def hello(name=None):
 
 # O Flask procurará modelos na templates pasta. Portanto, se seu aplicativo é um módulo,
 # esta pasta está ao lado desse módulo, se for um pacote, ela está realmente dentro do seu pacote:
+
 
 app.run()
