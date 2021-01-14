@@ -1,0 +1,9 @@
+<title>Bem-vindo ao flask</title>
+
+{% if name %}
+    <h1>Olá, {{ name }}</h1>
+{% else %}
+    <h1>Olá mundo</h1>
+{% endif %}
+
+{# Dentro modelos você também tem acesso à request, sessione 1 objetos, bem como a função.g get_flashed_messages() #}
