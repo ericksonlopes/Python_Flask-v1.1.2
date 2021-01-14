@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/user/<username>')
 def exibir_user_profile(username):
-    return f'Usuário {escape(username)}'
+    return f'Usuário {escape(username)}' # a string com sequências seguras para HTML. Use-o se precisar exibir
 
 
 @app.route('/post/<int:post_id>')
