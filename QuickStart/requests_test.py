@@ -9,10 +9,12 @@ import requests
 
 # 11
 
-files = {'file': open('11_text.txt', 'rb')}
+# files = {'file': open('11_text.txt', 'rb')}
+#
+#
+# files_post = requests.post('http://127.0.0.1:5000/', files=files)
+#
+# print(files_post.text)
 
 
-files_post = requests.post('http://127.0.0.1:5000/', files=files)
-
-print(files_post.text)
-
+print(requests.get('http://127.0.0.1:5000/user').text)
